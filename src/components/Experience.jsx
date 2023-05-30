@@ -8,10 +8,28 @@ import {SectionWrapper} from '../hoc'
 import { textVariant } from '../utils/motion'
 
 const ExperienceCard = ({experience}) =>{
-  <VerticalTimelineElement contentStyle={{background:"#1d1836", color:"#fff"}}>
+  return (
+  <VerticalTimelineElement contentStyle={{background:"#1d1836", color:"#fff"}}
+  contentArrowStyle={{borderRight:"7px solid #232631"}}
+  date={experience.date}
+  iconStyle={{background:experience.iconBg}}
+  icon = {<div ><img src = {experience.icon}/></div>}>
 
-    {experience.date}
+    <div>
+      <h3 className = "font-bold text-[violet] text-[20px]">{experience.title}</h3>
+      <p>{experience.company_name}</p>
+    </div>
+
+    <ul className='mt-5 list-disc pl-5'>
+      {experience.points.map((point,index)=>(
+        <li>
+          {point}
+        </li>
+      ))}
+    </ul>
+
   </VerticalTimelineElement>
+  )
 }
 
 
