@@ -19,13 +19,13 @@ const Hero = () => {
           <div>
             <h1 className ={`${styles.heroHeadText} text-white`} >This is <span className = "text-[#915eff]"> Jeff</span></h1>
             <p className = {`${styles.heroSubText} mt-2 text-white-100`}>
-              I am learning about the magic<br className = "sm:block hidden"/> of Front-end developing
+              Learning about the <span className='text-[Violet] font-mono text-[60px] drop-shadow-lg shadow-white'>Magic</span> of Software Engineering
             </p>
           </div>      
 
       </div>
 
-
+      <br></br>
       <ComputersCanvas/>
     </section>
   )

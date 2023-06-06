@@ -1,12 +1,23 @@
 import React from 'react'
 import { VerticalTimeline,VerticalTimelineElement } from 'react-vertical-timeline-component'
-import { motion } from 'framer-motion'
+import { color, motion } from 'framer-motion'
 import 'react-vertical-timeline-component/style.min.css'
 import {styles} from '../styles'
 import {experiences} from '../constants'
 import {SectionWrapper} from '../hoc'
 import { textVariant } from '../utils/motion'
 
+
+const CardWithGlow = () => {
+  const glowVariants = {
+    initial: {
+      opacity: 0
+    },
+    hover: {
+      opacity: 1
+    }
+  }
+}
 const ExperienceCard = ({experience}) =>{
   return (
   <VerticalTimelineElement contentStyle={{background:"#1d1836", color:"#fff"}}
@@ -36,10 +47,12 @@ const ExperienceCard = ({experience}) =>{
 const Experience = () => {
   return (
     <>
-      <motion.div variants ={textVariant()} >
+      <div>
+      <motion.div whileHover={{scale:1.2}} whileTap={{ opacity:0.5}}>
         <p className= {`${styles.sectionSubText}`}>Past Journey</p>
         <h2 className={styles.sectionHeadText}>Work Experience</h2>
       </motion.div>
+      </div>
 
       <div className='mt-20 flex flex-col '>
         <VerticalTimeline>

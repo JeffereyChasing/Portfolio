@@ -17,7 +17,6 @@ const ServiceCard = (service)=>{
         <div className='bg-tertiary rounded-[25px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
           <img src={service.icon} className='w-16'/>
           <h3 className='text-white text-[20px] font-bold text-center'>{service.title}</h3>
-
         </div>
       </motion.div>
     </Tilt>
