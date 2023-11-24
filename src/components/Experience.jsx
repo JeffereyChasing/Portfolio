@@ -24,7 +24,7 @@ const ExperienceCard = ({experience}) =>{
   contentArrowStyle={{borderRight:"7px solid #232631"}}
   date={experience.date}
   iconStyle={{background:experience.iconBg}}
-  icon = {<div ><img src = {experience.icon}/></div>}>
+  icon = {<div ><img style={{}} src = {experience.icon}/></div>}>
 
     <div>
       <h3 className = "font-bold text-[violet] text-[20px]">{experience.title}</h3>
