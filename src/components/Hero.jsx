@@ -11,28 +11,32 @@ const styless = { height: '500px', color: 'red', lineHeight: '100px', textAlign:
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative h-screen mx-auto"
+    style={{}}
+    >
       <div style={{ backgroundColor: "transparent" }} className={`${styles.paddingX} inset-0 max-w-7xl; mx-auto mt-20 flex flex-row items-start gap-5`}>
 
-        <div className="flex flex-col justify-center items-center mt-20 ">
+        <div className="flex flex-col justify-center items-center mt-10 ">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
-          <div className="w-1 sm:h-80 h-30 violet-gradient" />
+          <div className="w-1 sm:h-40 h-20 violet-gradient" />
         </div>
         {/*图标*/}
 
-        <div className='mt-20'>
+        <div className='mt-10'>
           <p className={`${styles.heroHeadText} text-white`} >This is <span className="text-[#915eff]"> Jeff</span></p>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Learning about the <span className='text-[Violet] font-mono text-[60px] drop-shadow-lg shadow-white'>Magic</span> of Software Engineering
+          <p className={`${styles.heroSubText} mt-0 text-white-80`}>
+            Learning about the <span className='text-[Violet] font-mono text-[50px] drop-shadow-lg shadow-white'>Magic</span> of Software Engineering
           </p>
         </div>
         {/*文字*/}
 
       </div>
 
-      <div style={{ height: "500px" }}>
+      <div>
 
-        <Carousel style={{alignItems:"center",backgroundColor:"transparent",display:"flex"}}>
+        <Carousel style={{alignItems:"center",backgroundColor:"transparent",display:"flex",
+        height:"350px"
+        }}>
           <div style={{color:"black"}}>
 
             {/*
@@ -59,8 +63,6 @@ const Hero = () => {
               />
             </Card>
              * */}
-
-
           </div>
           <div>
             <h3 style={styless}>Slide 1</h3>

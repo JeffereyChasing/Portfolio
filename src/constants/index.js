@@ -199,7 +199,7 @@ import {
         },
       ],
       image: DH,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://vue-website-rebuild.netlify.app",
     },
     {
       name: "Social Media Application",
@@ -220,7 +220,7 @@ import {
         },
       ],
       image: relish,
-      source_code_link: "https://github.com/JeffereyChasing/Social_media",
+      source_code_link: "https://time-to-relish.netlify.app",
     },
     {
       name: "Traffic-Sign-Classification (Data Science)",

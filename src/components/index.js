@@ -22,5 +22,5 @@ export {
   BallCanvas, 
   ComputersCanvas, 
   StarsCanvas,
-  Education
+  Education,
 }

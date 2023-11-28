@@ -8,7 +8,7 @@ export const textVariant = (delay) => {
         y: 0,
         opacity: 1,
         transition: {
-          type: "spring",
+          type:"right",
           duration: 1.25,
           delay: delay,
         },
@@ -81,7 +81,7 @@ export const textVariant = (delay) => {
       show: {
         transition: {
           staggerChildren: staggerChildren,
-          delayChildren: delayChildren || 0,
+          delayChildren: delayChildren || 0
         },
       },
     };

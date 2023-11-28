@@ -11,13 +11,19 @@ const ServiceCard = (service)=>{
   return(
 
 
-    <Tilt className="xs:w-[250px] w-full">
-      <motion.div variants={fadeIn("right","spring",0.5*(service.index),0.75)}className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'>
-
-        <div className='bg-tertiary rounded-[25px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
+    <Tilt className="w-[200px] mr-5" 
+    
+    
+    >
+      <motion.div variants={fadeIn("right","spring",0.5*(service.index),0.75)}className='w-full green-pink-gradient p-[2px] rounded-[20px] shadow-card'>
+        
+        <div className='bg-tertiary rounded-[25px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        style={{boxShadow:"7px 1px 20px 5px violet"}}>
           <img src={service.icon} className='w-16'/>
           <h3 className='text-white text-[20px] font-bold text-center'>{service.title}</h3>
         </div>
+
+
       </motion.div>
     </Tilt>
 

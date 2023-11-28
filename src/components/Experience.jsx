@@ -21,7 +21,7 @@ const CardWithGlow = () => {
 const ExperienceCard = ({experience}) =>{
   return (
   <VerticalTimelineElement contentStyle={{background:"#1d1836", color:"#fff"}}
-  contentArrowStyle={{borderRight:"7px solid #232631"}}
+  contentArrowStyle={{borderRight:"10px solid #232631"}}
   date={experience.date}
   iconStyle={{background:experience.iconBg}}
   icon = {<div ><a href={experience.website}><img style={{}} src = {experience.icon}/></a></div>}>
@@ -31,7 +31,7 @@ const ExperienceCard = ({experience}) =>{
       <p>{experience.company_name}</p>
     </div>
 
-    <ul className='mt-5 list-disc pl-5'>
+    <ul className = "mt-5 list-disc pl-5 text-[15px]">
       {experience.points.map((point,index)=>(
         <li>
           {point}
@@ -48,13 +48,13 @@ const Experience = () => {
   return (
     <>
       <div>
-      <motion.div whileHover={{scale:1.2}} whileTap={{ opacity:0.5}}>
+      <motion.div whileHover={{transition:"ease", backgroundColor:"violet"}} whileTap={{ opacity:0.5}}>
         <p className= {`${styles.sectionSubText}`}>Past Journey</p>
         <h2 className={styles.sectionHeadText}>Work Experience</h2>
       </motion.div>
       </div>
 
-      <div className='mt-20 flex flex-col '>
+      <div className='mt-20 flex  '>
         <VerticalTimeline>
           {experiences.map((experience,index)=>(
             <ExperienceCard key = {index} experience = {experience}/>

@@ -9,8 +9,8 @@ import {fadeIn,textVariant} from '../utils/motion'
 const ProjectCard = (project)=>{
   return(
     <motion.div variants={fadeIn("up","spring",0.5*project.index,0.5)}>
-      <Tilt className='bg-tertiary p-5 rounded-2xl  w-full sm:w-[360px]'>
-        <div className='relative w-full h-[230px]'>
+      <Tilt className='bg-tertiary p-5 rounded-2xl  w-full sm:w-[300px] mr-10'>
+        <div className='relative w-full h-[180px]'>
           <img src={project.image} className='w-full h-full object-fill rounded-[15px]'/>
         </div>
 
@@ -39,8 +39,8 @@ const ProjectCard = (project)=>{
 
 const Works = () => {
   return (
-    <>
-    <motion.div variants={textVariant()}>
+    <div>
+    <motion.div variants={textVariant(2)}>
       <p className= {`${styles.sectionSubText}`}>Works</p>
       <h2 className={styles.sectionHeadText}>My Projects</h2>
     </motion.div>
@@ -63,7 +63,7 @@ const Works = () => {
     {/* pROJECTS*/}
 
 
-    </>
+    </div>
   )
 }
 
