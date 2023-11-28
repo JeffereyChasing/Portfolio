@@ -20,15 +20,18 @@ const Navbar = () => {
 
           <img src ={logo} alt="logo" className = "w-9 h-9 object-contain"/>
           
-          <p className=" text-[20px] font-bold cursor-pointer"> Jeff's <span className = "sm:block hidden"> Portfolio </span> </p>
+          <p className=" text-[18px] font-bold cursor-pointer"> Jeff's <span className = "sm:block hidden"> Portfolio </span> </p>
 
         </Link>
 
 
-        <ul className='list-none hidden sm:flex flex-row gap-10'>
+        <ul className='list-none hidden sm:flex flex-row gap-8'>
 
             {navLinks.map((Link)=>(
-              <li key={Link.id} className={`${active === Link.title ? "text-white" : "text-secondary"} hover:text-white text-[18px]`} onClick={() => { setActive(Link.title); window.scrollTo(Link.x,Link.y)}}>
+              <li key={Link.id} className={`${active === Link.title ? "text-white" : "text-secondary"} hover:text-white text-[15px]`} 
+              onClick={() => { setActive(Link.title); window.scrollTo(Link.x,Link.y)}}
+              id='nav-element'
+              >
                   <a href ={`#${Link.id}`}> {Link.title} </a>
               </li>
             ))}
