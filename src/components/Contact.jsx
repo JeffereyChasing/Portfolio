@@ -7,7 +7,6 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { github,linkedin } from "../assets";
-import Icon from "supercons"
 
 
 
