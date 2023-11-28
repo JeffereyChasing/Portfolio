@@ -24,11 +24,12 @@ const school = () =>{
 const Education = () => {
   return (
     <Tilt className = "xs:w-[250px] bg-[transparent]">
+        {/**
         <motion.div className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'>
             <div className='bg-tertiary rounded-[25px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'>
-                <img />
             </div> 
         </motion.div>
+        . */}
     </Tilt>
   )
 }

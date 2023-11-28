@@ -21,9 +21,10 @@ import {
     shopify,
     carrent,
     jobit,
-    tripguide,
     threejs,
-    b
+    b,
+    Traffic_Project,
+    relish,DH,DH_Icon
   } from "../assets";
   
 
@@ -31,15 +32,28 @@ import {
     {
       id: "about",
       title: "About",
+      x:200,
+      y:900,
     },
     {
       id: "work",
       title: "Work",
+      x:2000,
+      y:1700,
+    },
+    {
+      id: "project",
+      title: "Project",
+      x:200,
+      y:3800,
     },
     {
       id: "contact",
       title: "Contact",
+      x:200,
+      y:200,
     },
+    
   ];
   
   const services = [
@@ -117,29 +131,37 @@ import {
   ];
   
   const experiences = [
+
+    {
+      title: "Software Engineering Intern",
+      company_name: "Digital Hainan",
+      icon: DH_Icon,
+      iconBg: "#E6DEDD",
+      date: "Jun. 2023 - Aug. 2023",
+      points: [
+        "Revamped the website for a data-driven company using HTML, CSS, and JavaScript within the Vue framework, incorporating original features including custom-designed animations and interactive web page APIs "
+        ,"Enhanced the performance and maintainability of the navigation system by restructuring the CSS architecture through preprocessor languages Sass and introducing new bundling tool Webpack, facilitating code modularization for improved clarity, reusability, and ease of comprehension by future developers."
+        ,"Developed 5 back-end interfaces for the website project, employing Ajax to efficiently maintain and update data stored in a MySQL database, resulting in a 20% reduction in data processing time and significantly enhancing overall system responsiveness."
+      ],
+      website:"www.szhn.cn/"
+
+    },
+
+
+
     {
       title: "Software Engineering Intern",
       company_name: "Pranos.ai",
       date: "Oct. 2022 - Apr. 2023",
       icon:p,
       points: [
-        "Optimized user interface in both Android and IOS systems: changed the inline style of different headers and updated web design using JavaScript and TypeScript",
-        "Debugged multiple APIs, converted multiple class components into functional components, updated ES5 features to ES6 features without breaking functions' existing functionality",
-        "Created multiple front-end screens with responsive features for the Pranos.ai mobile app using React Native",
+        "Improved interactive designs for 3 video controlling screens on both Android and IOS system through HTML, CSS and JavaScript, successfully pushed the app to the testing stage in 2 months"
+        ,"Optimized system functionality by performing systematic APIs diagnostics, refactoring class components into functional ones, and upgrading ES5 to ES6 features, resulting in saving at least 10% loading resource"
+        ,"Developed immersive mobile-end pages with diverse responsive front-end interfaces using the React Native framework, implementing page-directing systems with Bottom Tab Navigator and supplementary surface (bottom sheets) under the React Native framework, utilizing Masonry Layout, React Icons, and customized box layout to enhance user retention"
       ],
+      website:"https://pranos.ai/"
     },
-    {
-      title: "Marketing Intern",
-      company_name: "Klatch",
-      icon: k,
-      iconBg: "#E6DEDD",
-      date: "Aug. 2022 - Oct. 2022",
-      points: [
-        "Conducted research on potential consumers to create brand messaging that boosted the platform's customer base on major social platforms such as Instagram, LinkedIn, and Facebook",
-        "Analyzed and offered constructive suggestions about the UI/UX design from both employee and consumer perspectives to improve user experience",
-        "Used NLP algorithm and text mining to extract the unstructured data and translate it to structured data from social media to forecast the future marketing trend"
-      ],
-    },
+
     {
       title: "Data Analyst Intern",
       company_name: "Bosera Asset Management",
@@ -147,40 +169,14 @@ import {
       iconBg: "#383E56",
       date: "Mar 2021 - Jun 2021",
       points: [
-        "Analyzed multiple publicly offered funds and stocks based on their historical data and presented the possible reasons that could explain specific fluctuations in their performances",
-        "Analyzed and completed the registration of different seasonal sales data and visualized them through graphs",
-        "Monitored and analyzed over 20,000 customers' activity data using Python to uncover crucial variables driving user adoption and provided PMs with solution"
-
+        "Applying anomaly detection model such as Rupture to time series data from a portfolio of 10 mutual funds and stocks, generated study reports which visualized the causal effect to the team leader"
+        ,"Tracked and visualized the historical performance of company’s stock and fund through VBA, Matplotlib, and Python"
+        ,"Conducted in-depth data analysis to understand consumer behavior changes during the pandemic, informing the company's strategic response and delivered 10+ page report to the executives"
       ],
+      website:"http://www.bosera.com/english/"
+
     },
     
-  ];
-  
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
   ];
   
   const projects = [
@@ -202,7 +198,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
+      image: DH,
       source_code_link: "https://github.com/",
     },
     {
@@ -223,7 +219,7 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
+      image: relish,
       source_code_link: "https://github.com/JeffereyChasing/Social_media",
     },
     {
@@ -244,9 +240,9 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
+      image: Traffic_Project,
       source_code_link: "https://github.com/JeffereyChasing/Traffic-Sign-Classification",
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects};
+  export { services, technologies, experiences, projects};

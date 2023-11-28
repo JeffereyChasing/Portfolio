@@ -24,7 +24,7 @@ const ExperienceCard = ({experience}) =>{
   contentArrowStyle={{borderRight:"7px solid #232631"}}
   date={experience.date}
   iconStyle={{background:experience.iconBg}}
-  icon = {<div ><img style={{}} src = {experience.icon}/></div>}>
+  icon = {<div ><a href={experience.website}><img style={{}} src = {experience.icon}/></a></div>}>
 
     <div>
       <h3 className = "font-bold text-[violet] text-[20px]">{experience.title}</h3>
@@ -58,7 +58,8 @@ const Experience = () => {
         <VerticalTimeline>
           {experiences.map((experience,index)=>(
             <ExperienceCard key = {index} experience = {experience}/>
-          ))}
+          ))} 
+
         </VerticalTimeline>
       </div>
     </>

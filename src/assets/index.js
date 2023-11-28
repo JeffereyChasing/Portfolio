@@ -6,7 +6,6 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
-
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -20,20 +19,25 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-
+import Traffic_Project from "./Traffic_Project.png"
+import relish from "./relish.png"
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
 import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
-
+import DH from "./DH.png"
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import p from './company/p.jpg';
 import k from './company/k.jpg';
 import b from './company/b.jpg';
+import DH_Icon from './company/DH_Icon.png'
+import linkedin from './linkedin.png'
+
 
 export {
+  DH_Icon,linkedin,
   logo,
   backend,
   creator,
@@ -41,9 +45,7 @@ export {
   web,
   github,
   menu,
-  close,
-  css,
-  docker,
+  close, css, docker,
   figma,
   git,
   html,
@@ -64,5 +66,7 @@ export {
   tripguide,
   p,
   k,
-  b
+  b,
+  Traffic_Project,
+  relish,DH
 };
