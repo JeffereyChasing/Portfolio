@@ -18,7 +18,7 @@ const Hero = () => {
 
         <div className="flex flex-col justify-center items-center mt-10 ">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
-          <div className="w-1 sm:h-40 h-20 violet-gradient" />
+          <div style={{height:"300px"}} className="w-1 violet-gradient" />
         </div>
         {/*图标*/}
 

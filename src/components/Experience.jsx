@@ -47,21 +47,22 @@ const ExperienceCard = ({experience}) =>{
 const Experience = () => {
   return (
     <>
-      <div>
+    <motion.div style={{display:"flex",flexDirection:"column", marginLeft:"170px"}}>
+
       <motion.div whileHover={{transition:"ease", backgroundColor:"violet"}} whileTap={{ opacity:0.5}}>
         <p className= {`${styles.sectionSubText}`}>Past Journey</p>
         <h2 className={styles.sectionHeadText}>Work Experience</h2>
       </motion.div>
-      </div>
 
       <div className='mt-20 flex  '>
         <VerticalTimeline>
           {experiences.map((experience,index)=>(
             <ExperienceCard key = {index} experience = {experience}/>
           ))} 
-
         </VerticalTimeline>
       </div>
+
+    </motion.div>
     </>
   )
 }

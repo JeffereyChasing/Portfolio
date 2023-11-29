@@ -2,7 +2,7 @@ import React from 'react'
 import Tilt  from 'react-parallax-tilt'
 import {motion} from 'framer-motion'
 import {styles} from '../styles'
-import { services } from '../constants'
+import { services,greetings,introduction} from '../constants'
 import {fadeIn,textVariant} from '../utils/motion'
 import { SectionWrapper } from '../hoc'
 
@@ -42,15 +42,15 @@ const ServiceCard = (service)=>{
 
 const About = () => {
   return (
-    <>
-      <motion.div variants={textVariant()}>
+    <motion.div>
+      <motion.div variants={textVariant()} style={{backgroundColor:""}}>
         <p className= {`${styles.sectionSubText}`}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
       <motion.p variants = {fadeIn("","",0.1,1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'> 
-      NYU was founded on the belief that a student’s identity should not dictate the ability for them to access higher education. That sense of opportunity for all students, of all backgrounds, remains a part of who we are today and a critical part of what makes us a world class university. Our community embraces diversity, in all its forms, as a cornerstone of the NYU experience. 
-      We would like to better understand how your experiences would help us to shape and grow our diverse community. Please respond in 250 words or less. 
+        Welcome to my website! This is Yanqin Wu. 
+
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
@@ -61,7 +61,7 @@ const About = () => {
 
       </div>
 
-    </>
+    </motion.div>
   )
 }
 

@@ -55,6 +55,14 @@ import {
     },
     
   ];
+
+  
+  const greetings = "Hi, This is Jeff. Nice to meet you!"
+
+  const introduction = "I'm currently a student pursuing my Master of Science in Computer Science degree at New York Univeristy Tandon School of Engineering"
+
+
+
   
   const services = [
     {
@@ -245,4 +253,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, projects};
+  export { services, technologies, experiences, projects,greetings,introduction};
