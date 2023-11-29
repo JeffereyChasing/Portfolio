@@ -6,7 +6,6 @@ import { services,greetings,introduction} from '../constants'
 import {fadeIn,textVariant} from '../utils/motion'
 import { SectionWrapper } from '../hoc'
 
-
 const ServiceCard = (service)=>{
   return(
 
@@ -42,14 +41,15 @@ const ServiceCard = (service)=>{
 
 const About = () => {
   return (
-    <motion.div>
+    <motion.div style={{scale:1,display:"flex",justifyContent:"center"}}>
+      <motion.div style={{backgroundColor:""}}>
       <motion.div variants={textVariant()} style={{backgroundColor:""}}>
         <p className= {`${styles.sectionSubText}`}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
       <motion.p variants = {fadeIn("","",0.1,1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'> 
-        Welcome to my website! This is Yanqin Wu. 
+        Welcome to my website! This is Yanqin Wu. Sin
 
       </motion.p>
 
@@ -60,6 +60,38 @@ const About = () => {
         ))}
 
       </div>
+      </motion.div>
+
+
+
+
+
+
+
+
+      <div class="container" >
+    <div class="moon"></div>
+    <div class="orbit">
+      <div class="rocket-box">
+        <div class="rocket">
+          <span class="cockpit"></span>
+          <span class="engine"></span>
+          <span class="flanks"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
 
     </motion.div>
   )

@@ -33,7 +33,7 @@ import {
       id: "about",
       title: "About",
       x:200,
-      y:900,
+      y:850,
     },
     {
       id: "work",

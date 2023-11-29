@@ -11,8 +11,8 @@ const styless = { height: '500px', color: 'red', lineHeight: '100px', textAlign:
 
 const Hero = () => {
   return (
-    <section className="relative h-screen mx-auto"
-    style={{}}
+    <section className="relative mx-auto"
+    style={{backgroundColor:"transparent"}}
     >
       <div style={{ backgroundColor: "transparent" }} className={`${styles.paddingX} inset-0 max-w-7xl; mx-auto mt-20 flex flex-row items-start gap-5`}>
 
