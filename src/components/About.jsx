@@ -1,5 +1,5 @@
 import React from 'react'
-import { Tilt } from 'react-tilt'
+import Tilt  from 'react-parallax-tilt'
 import {motion} from 'framer-motion'
 import {styles} from '../styles'
 import { services } from '../constants'
@@ -12,12 +12,21 @@ const ServiceCard = (service)=>{
 
 
     <Tilt className="w-[200px] mr-5" 
-    
+    tiltReverse={false}
+    tiltMaxAngleX={45}
+    tiltMaxAngleY={45}
+    glareEnable
+    glareColor='violet'
+    glarePosition='all'
+    glareMaxOpacity={0.8}
+    perspective={700}
+    transitionEasing='cubic-bezier(.03,.98,.52,.99)'
+    transitionSpeed={200}
     
     >
       <motion.div variants={fadeIn("right","spring",0.5*(service.index),0.75)}className='w-full green-pink-gradient p-[2px] rounded-[20px] shadow-card'>
         
-        <div className='bg-tertiary rounded-[25px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        <div className='bg-tertiary rounded-[25px] py-5 px-12 min-h-[250px] flex justify-evenly items-center flex-col'
         style={{boxShadow:"7px 1px 20px 5px violet"}}>
           <img src={service.icon} className='w-16'/>
           <h3 className='text-white text-[20px] font-bold text-center'>{service.title}</h3>

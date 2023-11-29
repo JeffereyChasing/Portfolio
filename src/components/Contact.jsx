@@ -18,31 +18,29 @@ const Contact = () => {
     message: "",
   });
 
+
+
+  
+
   // Define your variants
   const boxShadowVariants = {
     initial: {
-      boxShadow: "5px 5px 20px 10px green",
+
       
     },
     animate: {
       boxShadow: "10px 10px 40px 20px violet",
       transition: {
-        duration: 0.5,
+        duration: 4,
         repeat: Infinity,
-        repeatType: "reverse"
+        repeatType: "reverse",
+        type:"tween",
+        delay:8
       }
-      
     }
   };
 
-  const controls = useAnimationControls()
-  
-  useEffect(() => {
-    controls.start({ 
-      boxShadowVariants
 
-     })
-  }, []) 
 
 
 
@@ -108,16 +106,14 @@ const Contact = () => {
 
     
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 `}
+      style={{backgroundColor:"transparent"}}
     >
       <motion.div
-        initial="initial"
-        animate={controls}
-        variants={boxShadowVariants}
+        initial={boxShadowVariants.initial}
+        animate={{}}
         className='flex-[0.75] bg-black-100 p-8'
-
-      
-      
+        style={{scale:1, maxHeight:"2000px",borderRadius:"15px"}}
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -125,8 +121,8 @@ const Contact = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
-          style={{}}
+          className='mt-8 flex flex-col gap-5' 
+          style={{height:""}}
         >
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
@@ -153,11 +149,11 @@ const Contact = () => {
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Message</span>
             <textarea 
-              rows="7"
+              rows="4"
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="This"
+              placeholder="Please share your thoughts"
               className=" bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
              
             />
