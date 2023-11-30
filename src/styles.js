@@ -10,7 +10,7 @@ const styles = {
       "text-[#dfd9ff] font-medium lg:text-[20px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]",
   
     sectionHeadText:
-      "text-white font-black md:text-[50px] sm:text-[50px] xs:text-[40px] text-[30px] hover:text-[violet] md: text-[100px]",
+      "text-white font-black md:text-[50px] sm:text-[50px] xs:text-[40px] text-[30px] hover:text-[violet] ",
     sectionSubText:
       "sm:text-[20px] text-[12px] text-secondary uppercase tracking-wider",
   };
