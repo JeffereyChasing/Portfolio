@@ -65,13 +65,13 @@ const Hero = () => {
              * */}
           </div>
           <div>
-            <h3 style={styless}>Slide 1</h3>
+            <h3 style={styless}></h3>
           </div>
           <div>
-            <h3 style={styless}>Slide 1</h3>
+            <h3 style={styless}></h3>
           </div>
           <div>
-            <h3 style={styless}>Slide 1</h3>
+            <h3 style={styless}></h3>
           </div>
              
               
