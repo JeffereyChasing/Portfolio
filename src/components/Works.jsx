@@ -48,7 +48,7 @@ const Works = () => {
 
     <div className='w-full'>
       <motion.p variants = {fadeIn("","",0.1,1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'> 
-      As a web developer, I firmly believe in the adage <b style={{color:"violet"}}>"Practice makes perfect."</b> My educational journey, enriched by both academic learning and online resources, has been fundamental in shaping my skills. However, I recognize that the true essence of a Software Engineer's growth lies in the application of this knowledge.
+      <span style={{fontSize:"30px",fontWeight:"bold",color:"white"}}>As</span> a web developer, I firmly believe in the adage <b style={{color:"violet"}}>"Practice makes perfect."</b> My educational journey, enriched by both academic learning and online resources, has been fundamental in shaping my skills. However, I recognize that the true essence of a Software Engineer's growth lies in the application of this knowledge.
       <br></br>
       <br></br>
 
