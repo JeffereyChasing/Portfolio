@@ -48,8 +48,13 @@ const Works = () => {
 
     <div className='w-full'>
       <motion.p variants = {fadeIn("","",0.1,1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'> 
-      NYU was founded on the belief that a student’s identity should not dictate the ability for them to access higher education. That sense of opportunity for all students, of all backgrounds, remains a part of who we are today and a critical part of what makes us a world class university. Our community embraces diversity, in all its forms, as a cornerstone of the NYU experience. 
-      We would like to better understand how your experiences would help us to shape and grow our diverse community. Please respond in 250 words or less. 
+      As a web developer, I firmly believe in the adage <b style={{color:"violet"}}>"Practice makes perfect."</b> My educational journey, enriched by both academic learning and online resources, has been fundamental in shaping my skills. However, I recognize that the true essence of a Software Engineer's growth lies in the application of this knowledge.
+      <br></br>
+      <br></br>
+
+During my college years, I proactively pursued internships and engaged in several independent projects. These experiences were not just about gaining practical insight into the industry; they were crucial in bridging the gap between theoretical understanding and real-world application.
+
+Below, I showcase three key projects that I have passionately worked on. These encompass two focused on <b style={{color:"violet"}}>Software Development</b> and one in the realm of <b style={{color:"violet"}}>Machine Learning.</b> Each project represents a step in my continuous journey of learning, applying, and evolving as a web developer.
       </motion.p>
     </div>
 

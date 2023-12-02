@@ -32,26 +32,26 @@ import {
     {
       id: "about",
       title: "About",
-      x:200,
+      x:300,
       y:850,
     },
     {
       id: "work",
       title: "Work",
       x:2000,
-      y:1700,
+      y:2000,
     },
     {
       id: "project",
       title: "Project",
       x:200,
-      y:3800,
+      y:4300,
     },
     {
       id: "contact",
       title: "Contact",
       x:200,
-      y:200,
+      y:7000,
     },
     
   ];
@@ -191,7 +191,9 @@ import {
     {
       name: "Interactive Website",
       description:
-        "Industry-level multi-pages website",
+      "As a key initiative in my web development portfolio, I led the revitalization of a website for a data-driven company, leveraging my expertise in HTML, CSS, and JavaScript within the Vue framework. This project was marked by the integration of innovative and original features, including custom-designed animations and interactive APIs, aimed at elevating the user experience and interface engagement. A critical aspect of my work involved enhancing the website's performance and maintainability. To achieve this, I restructured the CSS architecture, utilizing the Sass preprocessor language and introducing Webpack as a new bundling tool. This strategic overhaul not only improved the site’s navigation system but also significantly enhanced the modularity, clarity, and reusability of the code, thereby ensuring ease of understanding and adaptability for future development efforts."
+      ,
+
       tags: [
         {
           name: "Vue",
@@ -203,6 +205,10 @@ import {
         },
         {
           name: "tailwind",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "Sass",
           color: "pink-text-gradient",
         },
       ],
@@ -219,11 +225,11 @@ import {
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "Sanity",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "API",
           color: "pink-text-gradient",
         },
       ],

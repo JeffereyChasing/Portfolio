@@ -49,7 +49,7 @@ const Experience = () => {
     <>
     <motion.div style={{display:"flex",flexDirection:"column", marginLeft:"170px"}}>
 
-      <motion.div whileHover={{transition:"ease", backgroundColor:"violet"}} whileTap={{ opacity:0.5}}>
+      <motion.div whileHover={{transition:"ease", backgroundColor:"transparent",opacity:1,scale:1.1}} whileTap={{ opacity:0.5}}>
         <p className= {`${styles.sectionSubText}`}>Past Journey</p>
         <h2 className={styles.sectionHeadText}>Work Experience</h2>
       </motion.div>
@@ -67,4 +67,4 @@ const Experience = () => {
   )
 }
 
-export default SectionWrapper(Experience,"work","violet") 
+export default SectionWrapper(Experience,"work","rgba(165, 55, 253,0.6)") 
