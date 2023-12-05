@@ -163,8 +163,8 @@ import {
       date: "Oct. 2022 - Apr. 2023",
       icon:p,
       points: [
-        "Improved interactive designs for 3 video controlling screens on both Android and IOS system through HTML, CSS and JavaScript, successfully pushed the app to the testing stage in 2 months"
-        ,"Optimized system functionality by performing systematic APIs diagnostics, refactoring class components into functional ones, and upgrading ES5 to ES6 features, resulting in saving at least 10% loading resource"
+        "Improved interactive designs for 3 video controlling screens on both Android and IOS system through HTML, CSS and JavaScript, successfully pushed the app to the testing stage"
+        ,"Optimized system functionality by performing systematic APIs diagnostics, refactoring class components into functional ones, and upgrading ES5 to ES6 features, resulting in saving loading resource"
         ,"Developed immersive mobile-end pages with diverse responsive front-end interfaces using the React Native framework, implementing page-directing systems with Bottom Tab Navigator and supplementary surface (bottom sheets) under the React Native framework, utilizing Masonry Layout, React Icons, and customized box layout to enhance user retention"
       ],
       website:"https://pranos.ai/"
