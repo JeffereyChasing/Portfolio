@@ -14,7 +14,7 @@ const Hero = () => {
     <section className="relative mx-auto"
     style={{backgroundColor:"transparent"}}
     >
-      <div style={{ backgroundColor: "transparent" }} className={`${styles.paddingX} inset-0 max-w-7xl; mx-auto mt-20 flex flex-row items-start gap-5`}>
+      <div style={{ backgroundColor: "" }} className={`${styles.paddingX} inset-0 max-w-7xl; mx-auto mt-20 flex flex-row items-start gap-5`}>
 
         <div className="flex flex-col justify-center items-center mt-10 ">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
