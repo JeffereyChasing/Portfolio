@@ -10,7 +10,7 @@ import { FaStarHalfAlt } from "react-icons/fa";
 const Navbar = () => {
 
   const [active, setActive] = useState("");
-  const [bar,setBar] = useState(false);
+  const [bar,setBar] = useState(true);
 
 
 
@@ -62,7 +62,7 @@ const Navbar = () => {
           <div className="w-full h-[40px] flex justify-between items-center max-w-7xl mx-auto ">
             <FaStarHalfAlt 
               className="scale-[3] text-white mr-5 mt-[20px]"
-              onClick={() => setBar(true)} color='violet'
+              onClick={() => setBar(false)} color='violet'
             />
           </div>
         )}
