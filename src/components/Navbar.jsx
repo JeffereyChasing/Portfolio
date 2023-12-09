@@ -62,7 +62,7 @@ const Navbar = () => {
           <div className="w-full h-[40px] flex justify-between items-center max-w-7xl mx-auto ">
             <FaStarHalfAlt 
               className="scale-[3] text-white mr-5 mt-[20px]"
-              onClick={() => setBar(false)} color='violet'
+              onClick={() => setBar(true)} color='violet'
             />
           </div>
         )}
