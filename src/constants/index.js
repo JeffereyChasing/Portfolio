@@ -24,7 +24,7 @@ import {
     threejs,
     b,
     Traffic_Project,
-    relish,DH,DH_Icon
+    relish,DH,DH_Icon,project_hotel
   } from "../assets";
   
 
@@ -188,6 +188,8 @@ import {
   ];
   
   const projects = [
+
+    
     {
       name: "Interactive Website",
       description:
@@ -215,17 +217,21 @@ import {
       image: DH,
       source_code_link: "https://vue-website-rebuild.netlify.app",
     },
+
+
+
+
     {
-      name: "Social Media Application",
+      name: "Apartment Searching Application",
       description:
-      "In my portfolio, I feature a dynamic full-stack photo-sharing social media application, skillfully crafted using React and enhanced with Google Cloud Console API. This integration allows for effortless user interactions like image uploads, downloads, and comments. The backbone of this application is a sophisticated back-end storage system, developed using Sanity, which incorporates multiple schemas to adeptly handle both front-end interactions and direct storage modifications. This ensures a seamless data flow within the Sanity/Client environment. Moreover, the application boasts a diverse and responsive UI/UX design, meticulously tailored for various device frames using HTML, CSS, and React components, showcasing my commitment to creating engaging and user-friendly digital experiences",
+      "I designed and implemented a dynamic web application to facilitate apartment searches, utilizing HTML, CSS, and JavaScript for an interactive and user-friendly front-end. The application allows users to filter apartments based on various criteria such as the number of bedrooms and pet policies. To support these functionalities, I built a customized API with Python, enabling efficient data handling and communication between the front-end and back-end. Additionally, I designed a robust MySQL database schema to store user-input information securely. To ensure user data security, I implemented a secure login system, incorporating bcrypt hashing for password protection and parameterized queries to prevent SQL injection attacks. This comprehensive approach not only provides a seamless user experience but also ensures high security and data integrity.",
       tags: [
         {
-          name: "react",
+          name: "HTML,CSS,JavaSCript",
           color: "blue-text-gradient",
         },
         {
-          name: "Sanity",
+          name: "MySQL",
           color: "green-text-gradient",
         },
         {
@@ -233,8 +239,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: relish,
-      source_code_link: "https://time-to-relish.netlify.app",
+      image: project_hotel,
+      source_code_link: "https://github.com/JeffereyChasing/DataBase_Project/tree/laptop",
     },
     {
       name: "Traffic-Sign-Classification (Data Science)",
@@ -257,6 +263,20 @@ import {
       image: Traffic_Project,
       source_code_link: "https://github.com/JeffereyChasing/Traffic-Sign-Classification",
     },
+
+
+
   ];
+
+    const text = [
+
+      {
+        key: '1',
+        label: 'This is panel header 3',
+        children: `1`
+      },
+    
+    
+    ]
   
-  export { services, technologies, experiences, projects,greetings,introduction};
+  export { services, technologies, experiences, projects,greetings,introduction,text};

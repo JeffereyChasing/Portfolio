@@ -1,29 +1,15 @@
-import { BrowserRouter } from "react-router-dom"
-import {About,Contact,Experience,Feedbacks,Hero,Navbar,Tech,Works,StarsCanvas,Education} from './components'
+import { BrowserRouter, Route,Routes } from "react-router-dom";
+import {portfolio,notes} from './pages'
 
-const App = () =>{
-
-  return (
+const App = () => {
+  return ( 
     <BrowserRouter>
-    <div className = "relative z-0 bg-primary">
-
-      <div className="bg bg-cover bg-no-repeat bg -center">
-        <Navbar />
-        <Hero />
-      </div>
-
-      <About/>
-      <Experience/>
-      <Tech />
-      <Works />
-      <StarsCanvas />
-      <div className="relative z-0">
-        <Contact />
-      </div>
-
-    </div>
+        <Routes>
+          <Route path="/notes" Component={notes}/>
+          <Route path="/" Component={portfolio}/>
+        </Routes>
     </BrowserRouter>
-  )
-}
+  );
+};
 
-export default App
+export default App;

@@ -34,10 +34,11 @@ import k from './company/k.jpg';
 import b from './company/b.jpg';
 import DH_Icon from './company/DH_Icon.png'
 import linkedin from './linkedin.png'
-
+import project_hotel from './project_hotel.png'
 
 export {
   DH_Icon,linkedin,
+  project_hotel,
   logo,
   backend,
   creator,
