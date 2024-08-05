@@ -224,7 +224,7 @@ import {
     {
       name: "Apartment Searching Application",
       description:
-      "I designed and implemented a dynamic web application to facilitate apartment searches, utilizing HTML, CSS, and JavaScript for an interactive and user-friendly front-end. The application allows users to filter apartments based on various criteria such as the number of bedrooms and pet policies. To support these functionalities, I built a customized API with Python, enabling efficient data handling and communication between the front-end and back-end. Additionally, I designed a robust MySQL database schema to store user-input information securely. To ensure user data security, I implemented a secure login system, incorporating bcrypt hashing for password protection and parameterized queries to prevent SQL injection attacks. This comprehensive approach not only provides a seamless user experience but also ensures high security and data integrity.",
+      "I designed and implemented a dynamic web application to facilitate apartment searches, utilizing HTML, CSS, and JavaScript for an interactive and user-friendly front-end. The application allows users to filter apartments based on various criteria such as the number of bedrooms and pet policies. To support these functionalities, I built a customized API with Python for data scraping. Additionally, I designed a robust MySQL database schema to store user-input information securely. To ensure user data security, I implemented a secure login system, incorporating bcrypt hashing for password protection and parameterized queries to prevent SQL injection attacks.",
       tags: [
         {
           name: "HTML,CSS,JavaSCript",
